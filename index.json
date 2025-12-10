@@ -1,6 +1,6 @@
 {
   "sbds_version": "1.0",
-  "generated_at": "2025-01-01T00:00:00Z",
+  "generated_at": "2025-12-10T00:00:00Z",
   "repository": {
     "name": "SmartBatiDigitalStudio – Référentiel Produits",
     "owner": "jandriapro",
@@ -8,7 +8,6 @@
     "homepage": "https://jandriapro.github.io/products/"
   },
   "schema": "https://jandriapro.github.io/products/schema/product_schema.json",
-
   "products_index": [
     {
       "id": "osca_satinplus_mat",
@@ -16,7 +15,8 @@
       "type": "peinture_interieure",
       "nom": "SatinPlus Mat",
       "json_url": "https://jandriapro.github.io/products/products/osca_satinplus_mat.json",
-      "last_update": "2025-01-01"
+      "shortlink": "https://jandriapro.github.io/products/products/osca_satinplus_mat.json",
+      "last_update": "2025-12-10"
     }
   ]
 }
