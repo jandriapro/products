@@ -1,0 +1,32 @@
+{
+  "id": "tarkett_iq_granit",
+  "fabricant": "TARKETT",
+  "type": "revetement_de_sol_pvc_homogene",
+  "nom": "iQ Granit",
+  "designation": "Revêtement de sol PVC homogène Tarkett iQ Granit pour locaux intérieurs.",
+  "description": "Revêtement de sol PVC homogène iQ Granit, usage intérieur, gamme iQ (entretien facilité). Les détails techniques complets sont fournis dans la fiche technique officielle Tarkett.",
+  "categorie": "sols_resilients",
+  "usage": "locaux_interieurs",
+  "couleur": null,
+  "conditionnement": null,
+
+  "documents": {
+    "fiches": [
+      {
+        "label": "Fiche Technique iQ Granit – PDF officiel Tarkett",
+        "url": "https://media.tarkett.com/docs/SC_FR_iq_granit.pdf",
+        "source": "TARKETT",
+        "version": null,
+        "date": null,
+        "commentaire": null
+      }
+    ]
+  },
+
+  "meta": {
+    "date_creation": "2025-12-10",
+    "date_mise_a_jour": "2025-12-10",
+    "auteur": "SmartBatiDigitalStudio",
+    "projet": "SBDS"
+  }
+}
