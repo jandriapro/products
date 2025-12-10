@@ -1,0 +1,41 @@
+{
+  "id": "osca_satinplus_mat",
+  "fabricant": "OSCA",
+  "type": "peinture_interieure",
+  "nom": "SatinPlus Mat",
+
+  "designation": "Peinture acrylique SatinPlus Mat OSCA – finition mate intérieur.",
+  "description": "Peinture intérieure acrylique mate conforme au DTU 59.1, destinée aux murs et plafonds.",
+  "categorie": "peintures",
+  "usage": "murs_plafonds",
+  "couleur": "blanc",
+  "conditionnement": "10 L",
+
+  "documents": {
+    "fiches": [
+      {
+        "label": "FT SatinPlus Mat",
+        "url": "https://www.osca.fr/docs/ft_satinplus_mat.pdf",
+        "source": "OSCA",
+        "version": null,
+        "date": null,
+        "commentaire": null
+      },
+      {
+        "label": "FDES SatinPlus Mat",
+        "url": "https://www.osca.fr/docs/fdes_satinplus_mat.pdf",
+        "source": "INIES",
+        "version": null,
+        "date": null,
+        "commentaire": null
+      }
+    ]
+  },
+
+  "meta": {
+    "date_creation": "2025-01-01",
+    "date_mise_a_jour": "2025-01-01",
+    "auteur": "SmartBatiDigitalStudio",
+    "projet": "SBDS"
+  }
+}
