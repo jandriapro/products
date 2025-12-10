@@ -17,6 +17,15 @@
       "json_url": "https://jandriapro.github.io/products/products/osca_satinplus_mat.json",
       "shortlink": "https://jandriapro.github.io/products/products/osca_satinplus_mat.json",
       "last_update": "2025-12-10"
+    },
+    {
+      "id": "tarkett_iq_granit",
+      "fabricant": "TARKETT",
+      "type": "revetement_de_sol_pvc_homogene",
+      "nom": "iQ Granit",
+      "json_url": "https://jandriapro.github.io/products/products/tarkett_iq_granit.json",
+      "shortlink": "https://jandriapro.github.io/products/products/tarkett_iq_granit.json",
+      "last_update": "2025-12-10"
     }
   ]
 }
