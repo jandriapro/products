@@ -1,0 +1,22 @@
+{
+  "sbds_version": "1.0",
+  "generated_at": "2025-01-01T00:00:00Z",
+  "repository": {
+    "name": "SmartBatiDigitalStudio – Référentiel Produits",
+    "owner": "jandriapro",
+    "description": "Référentiel JSON normalisé SBDS pour produits BTP (FT, FDES, DOP, notices, certifications, URL sources).",
+    "homepage": "https://jandriapro.github.io/products/"
+  },
+  "schema": "https://jandriapro.github.io/products/schema/product_schema.json",
+
+  "products_index": [
+    {
+      "id": "osca_satinplus_mat",
+      "fabricant": "OSCA",
+      "type": "peinture_interieure",
+      "nom": "SatinPlus Mat",
+      "json_url": "https://jandriapro.github.io/products/products/osca_satinplus_mat.json",
+      "last_update": "2025-01-01"
+    }
+  ]
+}
