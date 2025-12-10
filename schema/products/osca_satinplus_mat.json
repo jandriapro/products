@@ -1,0 +1,57 @@
+{
+  "sbds_version": "1.0",
+  "generated_at": "2025-01-01T00:00:00Z",
+  "product": {
+    "id": "osca_satinplus_mat",
+    "fabricant": "OSCA",
+    "type": "peinture_interieure",
+    "nom": "SatinPlus Mat",
+    "description": "Peinture acrylique intérieure finition mate – conforme DTU 59.1.",
+    "domaines": ["logements", "ERP", "parties communes"],
+    "supports_compatibles": ["plâtre", "plaques de plâtre", "enduits", "béton"],
+    "teintes_disponibles": "Selon nuancier OSCA",
+    "performances": {
+      "classe_cov": "A+",
+      "rendement_m2_l": 10,
+      "dilution": "Prêt à l'emploi",
+      "temps_reco": "6h",
+      "application": ["rouleau", "pinceau", "airless"]
+    },
+    "documents": {
+      "fiche_technique": {
+        "label": "Fiche technique OSCA SatinPlus Mat",
+        "url": "https://www.osca.fr/docs/ft_satinplus_mat.pdf",
+        "source": "OSCA",
+        "version": null,
+        "date": null,
+        "commentaires": null
+      },
+      "fdes": {
+        "label": "FDES OSCA SatinPlus Mat",
+        "url": "https://www.osca.fr/docs/fdes_satinplus_mat.pdf",
+        "source": "INIES",
+        "version": null,
+        "date": null,
+        "commentaires": null
+      },
+      "fds": {
+        "label": "FDS OSCA SatinPlus Mat",
+        "url": "https://www.osca.fr/docs/fds_satinplus_mat.pdf",
+        "source": "OSCA",
+        "version": null,
+        "date": null,
+        "commentaires": null
+      }
+    },
+    "conditions_pose": {
+      "temperature_min": 8,
+      "hygrometrie_max": 65,
+      "commentaires": "Supports conformes DTU 59.1, secs et cohésifs."
+    },
+    "tracabilite": {
+      "lot": null,
+      "date_fabrication": null
+    },
+    "last_update": "2025-01-01"
+  }
+}
