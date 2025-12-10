@@ -1,0 +1,30 @@
+{
+  "id": "gerflor_taralay_initial",
+  "fabricant": "GERFLOR",
+  "type": "revetement_sol_vinyle",
+  "nom": "Taralay Initial",
+  "designation": "Revêtement de sol vinyle Gerflor Taralay Initial.",
+  "description": "Revêtement de sol PVC hétérogène pour locaux intérieurs.",
+  "categorie": "sols_resilients",
+  "usage": "locaux_interieurs",
+  "couleur": null,
+  "conditionnement": null,
+  "documents": {
+    "fiches": [
+      {
+        "label": "Fiche Technique Taralay Initial",
+        "url": "https://www.gerflor.fr/media/taralay_initial.pdf",
+        "source": "GERFLOR",
+        "version": null,
+        "date": null,
+        "commentaire": null
+      }
+    ]
+  },
+  "meta": {
+    "date_creation": "2025-12-10",
+    "date_mise_a_jour": "2025-12-10",
+    "auteur": "SmartBatiDigitalStudio",
+    "projet": "SBDS"
+  }
+}
