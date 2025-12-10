@@ -1,0 +1,91 @@
+name: Build SBDS product index
+
+on:
+  push:
+    paths:
+      - "products/*.json"
+      - "schema/product_schema.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate products index.json
+        run: |
+          python - << 'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime, date
+
+          repo_root = Path(".").resolve()
+          products_dir = repo_root / "products"
+          index_path = repo_root / "index.json"
+
+          base_url = "https://jandriapro.github.io/products/products/"
+
+          products = []
+          for product_file in sorted(products_dir.glob("*.json")):
+              with product_file.open(encoding="utf-8") as f:
+                  data = json.load(f)
+
+              prod_id = data.get("id")
+              fabricant = data.get("fabricant")
+              ptype = data.get("type")
+              nom = data.get("nom")
+              meta = data.get("meta", {})
+
+              last_update = (
+                  meta.get("date_mise_a_jour")
+                  or date.today().isoformat()
+              )
+
+              products.append({
+                  "id": prod_id,
+                  "fabricant": fabricant,
+                  "type": ptype,
+                  "nom": nom,
+                  "json_url": f"{base_url}{product_file.name}",
+                  "shortlink": f"{base_url}{product_file.name}",
+                  "last_update": last_update,
+              })
+
+          index = {
+              "sbds_version": "1.0",
+              "generated_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+              "repository": {
+                  "name": "SmartBatiDigitalStudio – Référentiel Produits",
+                  "owner": "jandriapro",
+                  "description": "Référentiel JSON normalisé SBDS pour produits BTP (FT, FDES, DOP, notices, certifications, URL sources).",
+                  "homepage": "https://jandriapro.github.io/products/"
+              },
+              "schema": "https://jandriapro.github.io/products/schema/product_schema.json",
+              "products_index": products,
+          }
+
+          index_path.write_text(
+              json.dumps(index, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8"
+          )
+          PY
+
+      - name: Commit updated index.json if changed
+        run: |
+          if git diff --quiet index.json; then
+            echo "No changes in index.json"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add index.json
+          git commit -m "Auto-update index.json"
+          git push
