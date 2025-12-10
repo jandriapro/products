@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jandriapro.github.io/products/schema/product_schema.json",
+  "title": "Schéma SBDS – Produit BTP",
+  "type": "object",
+  "required": [
+    "sbds_version",
+    "id",
+    "fabricant",
+    "nom",
+    "type",
+    "documents"
+  ],
+  "properties": {
+    "sbds_version": {
+      "type": "string",
+      "description": "Version du modèle SBDS pour les produits."
+    },
+    "id": {
+      "type": "string",
+      "description": "Identifiant unique du produit dans le référentiel SBDS."
+    },
+    "fabricant": {
+      "type": "string",
+      "description": "Nom du fabricant (OSCA, Tarkett, etc.)."
+    },
+    "marque": {
+      "type": ["string", "null"],
+      "description": "Marque commerciale éventuelle."
+    },
+    "gamme": {
+      "type": ["string", "null"],
+      "description": "Gamme ou famille interne du fabricant."
+    },
+    "nom": {
+      "type": "string",
+      "description": "Nom commercial complet du produit."
+    },
+    "type": {
+      "type": "string",
+      "description": "Type fonctionnel du produit (peinture_interieure, sol_pvc, etc.)."
+    },
+    "description_courte": {
+      "type": ["string", "null"],
+      "description": "Résumé rapide pour usage chantier / DOE."
+    },
+    "domaines_application": {
+      "type": "array",
+      "description": "Principaux domaines d’application.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supports": {
+      "type": "array",
+      "description": "Supports admissibles selon FT.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "performances": {
+      "type": "object",
+      "description": "Performances techniques principales.",
+      "properties": {
+        "reaction_feu": {
+          "type": ["string", "null"]
+        },
+        "classe_covo": {
+          "type": ["string", "null"]
+        },
+        "emit_air_interieur": {
+          "type": ["string", "null"]
+        },
+        "autres": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "references_cctp": {
+      "type": "object",
+      "description": "Références textuelles vers les pièces marché.",
+      "properties": {
+        "lot": {
+          "type": ["string", "null"]
+        },
+        "article_cctp": {
+          "type": ["string", "null"]
+        },
+        "commentaire": {
+          "type": ["string", "null"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "documents": {
+      "type": "object",
+      "description": "Documents techniques et réglementaires liés au produit.",
+      "properties": {
+        "fiche_technique": {
+          "$ref": "#/$defs/documentRef"
+        },
+        "fdes": {
+          "$ref": "#/$defs/documentRef"
+        },
+        "fds": {
+          "$ref": "#/$defs/documentRef"
+        },
+        "dop": {
+          "$ref": "#/$defs/documentRef"
+        },
+        "autres": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/documentRef"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "doe": {
+      "type": "object",
+      "description": "Informations spécifiques pour le DOE produit.",
+      "properties": {
+        "inclure_dans_doe": {
+          "type": "boolean"
+        },
+        "commentaires_doe": {
+          "type": ["string", "null"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "meta": {
+      "type": "object",
+      "description": "Métadonnées de suivi SBDS.",
+      "properties": {
+        "source_principale": {
+          "type": ["string", "null"]
+        },
+        "derniere_verification": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "auteur_sbds": {
+          "type": ["string", "null"]
+        },
+        "commentaires": {
+          "type": ["string", "null"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "documentRef": {
+      "type": "object",
+      "required": [
+        "label"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "description": "Libellé du document (ex. Fiche technique, FDES...)."
+        },
+        "url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL du document si disponible."
+        },
+        "source": {
+          "type": ["string", "null"],
+          "description": "Origine du document (OSCA, INIES, etc.)."
+        },
+        "version": {
+          "type": ["string", "null"],
+          "description": "Référence ou n° de version du document."
+        },
+        "date": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "Date de mise à jour connue."
+        },
+        "commentaire": {
+          "type": ["string", "null"],
+          "description": "Commentaire utile chantier / DOE."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
