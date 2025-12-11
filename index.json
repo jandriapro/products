@@ -1,6 +1,6 @@
 {
   "sbds_version": "1.0",
-  "generated_at": "2025-12-10T21:21:53Z",
+  "generated_at": "2025-12-11T06:49:02Z",
   "repository": {
     "name": "SmartBatiDigitalStudio – Référentiel Produits",
     "owner": "jandriapro",
@@ -35,6 +35,15 @@
       "json_url": "https://jandriapro.github.io/products/products/tarkett_iq_granit.json",
       "shortlink": "https://jandriapro.github.io/products/products/tarkett_iq_granit.json",
       "last_update": "2025-12-10"
+    },
+    {
+      "id": "weber_prim_multi",
+      "fabricant": "WEBER",
+      "type": "primaire_sols_murs",
+      "nom": "weberprim multi",
+      "json_url": "https://jandriapro.github.io/products/products/weber_prim_multi.json",
+      "shortlink": "https://jandriapro.github.io/products/products/weber_prim_multi.json",
+      "last_update": "2025-12-11"
     }
   ]
 }
