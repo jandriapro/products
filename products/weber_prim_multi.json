@@ -1,0 +1,32 @@
+{
+  "id": "weber_prim_multi",
+  "fabricant": "WEBER",
+  "type": "primaire_sols_murs",
+  "nom": "weberprim multi",
+  "designation": "Primaire polyvalent d’adhérence pour sols et murs avant enduits, colles ou ragréages.",
+  "description": "Primaire polyvalent en phase aqueuse, utilisé pour garantir l'accroche des colles, enduits et ragréages Weber sur divers supports : béton, chape ciment, carrelage, anciens revêtements, supports difficiles. Application rouleau ou brosse.",
+  "categorie": "preparation_sols",
+  "usage": "supports_divers_interieurs",
+  "couleur": "blanc laiteux",
+  "conditionnement": "bidon 5 ou 10 L",
+
+  "documents": {
+    "fiches": [
+      {
+        "label": "Fiche technique weberprim multi",
+        "url": "https://www.weber.fr/sites/fr/files/2022-07/FT_weberprim_multi.pdf",
+        "source": "WEBER",
+        "version": "2022",
+        "date": "2022-07-01",
+        "commentaire": null
+      }
+    ]
+  },
+
+  "meta": {
+    "date_creation": "2025-12-11",
+    "date_mise_a_jour": "2025-12-11",
+    "auteur": "SmartBatiDigitalStudio",
+    "projet": "SBDS"
+  }
+}
